@@ -6,23 +6,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link type="text/css" th:href="@{/css/table.css}" rel="stylesheet"/>
+    <link type="text/css" th:href="@{/css/main.css}" rel="stylesheet"/>
 </head>
 <body>
-<h2 th:text="${title}"></h2>
-
-<table>
-    <thead>
-        <tr>
-            <th>아이디</th>
-            <th>이메일</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr th:each="l : ${memberList}">
-            <td th:text="${l.memberId}"></td>
-            <td th:text="${l.memberEmail}"></td>
-        </tr>
-    </tbody>
-</table>
+<h2 th:text="${title}">테스트</h2>
 </body>
 </html>
